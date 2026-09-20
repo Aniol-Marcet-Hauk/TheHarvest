@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2432158469499367155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4007766965612838203}
+  - component: {fileID: 7000254261155953448}
+  - component: {fileID: 1528652652767522243}
+  - component: {fileID: 7974972302388171333}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: weapon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4007766965612838203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432158469499367155}
+  m_LocalRotation: {x: -0.11713634, y: -0.28102845, z: -0.0685758, w: 0.9500524}
+  m_LocalPosition: {x: -0.1389, y: 0.0126, z: -0.0902}
+  m_LocalScale: {x: 0.25098443, y: 0.1922516, z: 0.1922516}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8829198354693819162}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -15.136, y: -32.448, z: -3.829}
+--- !u!114 &7000254261155953448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432158469499367155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab3dc054f0b64f1a9a9a1de1ba13dbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arma: {fileID: 11400000, guid: df05b31d09a6f4181b36159ad35fa424, type: 2}
+  destroyOnHit: 0
+--- !u!54 &1528652652767522243
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432158469499367155}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!135 &7974972302388171333
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432158469499367155}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.6
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8829198354693819163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8829198354693819162}
+  - component: {fileID: 3265372106221901400}
+  m_Layer: 0
+  m_Name: Martell
+  m_TagString: weapon
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8829198354693819162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829198354693819163}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.088, y: 1.05, z: -8.304808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 4007766965612838203}
+  - {fileID: 9120968424377826580}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3265372106221901400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829198354693819163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36bbce722f87548b1bf0e69c429ef415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coll: {fileID: 7974972302388171333}
+--- !u!1001 &8727563801788242687
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8829198354693819162}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0369
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0089
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.0233
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.32123888
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6682606
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.58176744
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3343352
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -2.311
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -124.786
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 96.707
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+      propertyPath: m_Name
+      value: Martell
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+--- !u!4 &9120968424377826580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc58468dc1603eb49831f0a93dd53398, type: 3}
+  m_PrefabInstance: {fileID: 8727563801788242687}
+  m_PrefabAsset: {fileID: 0}

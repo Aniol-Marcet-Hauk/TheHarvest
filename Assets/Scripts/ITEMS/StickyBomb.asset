@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 352e1bfa724304553bec3e625e6164f1, type: 3}
+  m_Name: StickyBomb
+  m_EditorClassIdentifier: 
+  _Name: Bomb
+  _imageUI: {fileID: 2800000, guid: 512fda052722c42c6a94864355a5f97f, type: 3}
+  _addAmount: 2
+  bomb: {fileID: 8519139314261070411, guid: 8bc9b5c1078254f75a51589c75836fb9, type: 3}
+  speed: 9
+  timeExplode: 3
+  distanceFromPlayerAppear: 1
+  _coolDown: 2

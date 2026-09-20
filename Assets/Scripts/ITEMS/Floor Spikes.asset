@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b88148dc2c24af2aa97b4be4646d48, type: 3}
+  m_Name: Floor Spikes
+  m_EditorClassIdentifier: 
+  _Name: floor Spikes
+  _imageUI: {fileID: 2800000, guid: 3e58cca38b4d849538379f234ab17aee, type: 3}
+  _addAmount: 3
+  spikes: {fileID: 1328864018094636961, guid: 51ba5f77c78384bd58744b86013cd653, type: 3}
+  amountOfSpikes: 8
+  distanceFromPlayerAppear: 0.65
+  speed: 2
+  randSpeed: 2
+  randRotation: 100
+  lm:
+    serializedVersion: 2
+    m_Bits: 0
+  _coolDown: 5

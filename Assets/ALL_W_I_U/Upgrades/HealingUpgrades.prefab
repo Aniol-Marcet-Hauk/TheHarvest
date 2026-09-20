@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4574574433824219248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4574574433824219252}
+  - component: {fileID: 4574574433824219251}
+  - component: {fileID: 4574574433824219255}
+  m_Layer: 0
+  m_Name: HealingUpgrades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4574574433824219252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574574433824219248}
+  m_LocalRotation: {x: 0.46193978, y: 0.19134173, z: 0.19134173, w: 0.84462327}
+  m_LocalPosition: {x: 7.25, y: 0.99, z: 27.87}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3103962775386947518}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 45, y: 45, z: 45}
+--- !u!65 &4574574433824219251
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574574433824219248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4574574433824219255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4574574433824219248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2748b6d010e3423dbcb5cd77cd3cfe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 0.5
+  chooseUpgrade: 0
+  price: 50
+--- !u!1001 &3213816205131651157
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4574574433824219252}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 430.1371
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 430.1371
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 430.1371
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.054
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.077
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.84462327
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4619398
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.19134173
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5578bdf27ee7bf743bd72e8e4172913c, type: 2}
+    - target: {fileID: 919132149155446097, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+      propertyPath: m_Name
+      value: Health potion
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+--- !u!4 &3103962775386947518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8273e7868d24544b1895919842e20c31, type: 3}
+  m_PrefabInstance: {fileID: 3213816205131651157}
+  m_PrefabAsset: {fileID: 0}
