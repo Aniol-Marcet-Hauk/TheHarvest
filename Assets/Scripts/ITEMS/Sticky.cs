@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Sticky : MonoBehaviour
 {
-    private bool hasChecked = false;
-    public Collider coll;
-    public LayerMask lm;
+    private bool m_HasChecked = false;
+    [SerializeField] private Collider m_Coll;
+    [SerializeField] private LayerMask m_Lm;
  
     private void Start()
     {
@@ -14,18 +14,18 @@ public class Sticky : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.GetComponent<PlayerMain>() == null && other.tag != "Bullet" && other.tag != "RoomCollider" && other.tag != "Player" &&hasChecked==false)
+        if(other.GetComponent<PlayerMain>() == null && other.tag != "Bullet" && other.tag != "RoomCollider" && other.tag != "Player" && m_HasChecked == false)
         {
-            if(((1 << other.gameObject.layer) & lm) != 0)
+            if(((1 << other.gameObject.layer) & m_Lm) != 0)
             {
                 return;
             }
-            hasChecked = true;
-            STICK(other);
-            Destroy(coll);
+            m_HasChecked = true;
+            Stick(other);
+            Destroy(m_Coll);
         }
     }
-    void STICK(Collider stickTo)
+    private void Stick(Collider stickTo)
     {
         
        

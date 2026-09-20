@@ -53,7 +53,7 @@ public class FireAttacks: Upgrades
     public override void _OnHitEnemy(PlayerMain player, Enemy en, float strengthen)
     {
 
-        en.StartCoroutine(en.constantDamage(0.25f*  strengthen, duration, 0));
+        en.StartCoroutine(en.ConstantDamage(0.25f*  strengthen, duration, 0));
         
     }
 }
@@ -282,7 +282,7 @@ public class KnockBackEnemy : Upgrades
         en.DistanceKnockBack = 2*strengthen;
 
         //This second line here might not be necessary
-        en.speedKnockBack = 1f * strengthen;
+        en.SpeedKnockBack = 1f * strengthen;
     }
 }
 public class KnockBackEnemyMeleeWeapon: Upgrades

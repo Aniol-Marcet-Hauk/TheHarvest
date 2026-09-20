@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class ActivateDamage : MonoBehaviour
 {
-    public TrapDamage trapd;
-    public float wait;
+    [SerializeField] private TrapDamage m_Trapd;
+    [SerializeField] private float m_Wait;
     void Start()
     {
-        trapd.enabled = false;
+        m_Trapd.enabled = false;
     }
 
-    IEnumerator TimeWait()
+    private IEnumerator TimeWait()
     {
-        yield return new WaitForSeconds(wait);
-        trapd.enabled = true;
+        yield return new WaitForSeconds(m_Wait);
+        m_Trapd.enabled = true;
     }
 }

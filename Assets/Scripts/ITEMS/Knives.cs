@@ -15,7 +15,7 @@ public class Knives:Items
     public float knifeSpeed = 0.4f;
     public float _distance = 6f;
     [SerializeField]
-    private LayerMask lm;
+    private LayerMask m_Lm;
     public float _coolDown;
     //private Transform throwKnife;
     public override int addAmount()
@@ -43,13 +43,13 @@ public class Knives:Items
         throwKnife.rotation = Quaternion.LookRotation(player.rot);
         RaycastHit info;
 
-        if( Physics.SphereCast(throwKnife.position - throwKnife.forward*0.25f, 0.5f, throwKnife.forward,out info, _distance, lm))
+        if( Physics.SphereCast(throwKnife.position - throwKnife.forward*0.25f, 0.5f, throwKnife.forward,out info, _distance, m_Lm))
         {
 
-            float CalcSpeed = knifeSpeed * info.distance / _distance;
+            float calcSpeed = knifeSpeed * info.distance / _distance;
             DOTween.Init();
             
-            throwKnife.DOMove(throwKnife.position + throwKnife.forward * info.distance, CalcSpeed).OnComplete(() => damageEnem(info.collider.GetComponent<Enemy>(), throwKnife));
+            throwKnife.DOMove(throwKnife.position + throwKnife.forward * info.distance, calcSpeed).OnComplete(() => DamageEnem(info.collider.GetComponent<Enemy>(), throwKnife));
             
         }
         else
@@ -61,7 +61,7 @@ public class Knives:Items
         
         
     }
-    private void damageEnem(Enemy en,Transform des)
+    private void DamageEnem(Enemy en,Transform des)
     {
         if(en!= null)
         {

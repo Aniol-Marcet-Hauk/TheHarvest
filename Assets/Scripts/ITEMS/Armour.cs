@@ -36,9 +36,9 @@ public class Armour : Items
         }
         float x = GameManager.gameManager.playerDamageMultiplier;
         GameManager.gameManager.playerDamageMultiplier = reduccioDeMalMenorA1;
-        playerDamageBackToNormal(x);
+        PlayerDamageBackToNormal(x);
     }
-    IEnumerator playerDamageBackToNormal(float back)
+    private IEnumerator PlayerDamageBackToNormal(float back)
     {
         yield return new WaitForSeconds(temps);
         GameManager.gameManager.playerDamageMultiplier = back;

@@ -9,7 +9,7 @@ public class Bomb : Items
 
     public int _addAmount = 2;
     [Space]
-    public Rigidbody bomb;
+    [SerializeField] private Rigidbody m_Bomb;
     
     public float speed,timeExplode,distanceFromPlayerAppear = 1;
 
@@ -41,7 +41,7 @@ public class Bomb : Items
     public override void _Update(PlayerMain player)
     {
         player.ItemInteract();
-        Rigidbody rbBomb = Instantiate(bomb, player.transform.position + player.transform.forward*distanceFromPlayerAppear, player.transform.rotation);
+        Rigidbody rbBomb = Instantiate(m_Bomb, player.transform.position + player.transform.forward*distanceFromPlayerAppear, player.transform.rotation);
         rbBomb.velocity = player.transform.forward * speed;
         player.StartCoroutine (TimeToExplode(rbBomb.GetComponent<Animator>()));
     }

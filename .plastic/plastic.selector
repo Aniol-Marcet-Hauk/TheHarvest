@@ -1,4 +1,0 @@
-repository "Treball de reserca@aniol_marcet_gmail_com@cloud"
-  path "/"
-    smartbranch "/main" changeset "138"                 
-     

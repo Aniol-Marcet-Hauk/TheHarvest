@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class UpgradePickup : MonoBehaviour
 {
-    private Upgrades upgr;
-    public float strength = 1;
-    public ChooseUpgrade chooseUpgrade;
-    public int price;
+    private Upgrades m_Upgr;
+    [SerializeField] private float m_Strength = 1;
+    [SerializeField] private ChooseUpgrade m_ChooseUpgrade;
+    [SerializeField] private int m_Price;
     private void Start()
     {
-        upgr = assaignUpgr();
+        m_Upgr = AssignUpgrade();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -19,7 +19,7 @@ public class UpgradePickup : MonoBehaviour
         {
 
             AddUpgradeToUpgradeList();
-            GameManager.gameManager.StartCoroutine(GameManager.gameManager.UpgradeShow(chooseUpgrade.ToString()));
+            GameManager.gameManager.StartCoroutine(GameManager.gameManager.UpgradeShow(m_ChooseUpgrade.ToString()));
             Destroy(gameObject);
         }
     }
@@ -29,15 +29,15 @@ public class UpgradePickup : MonoBehaviour
         List<UpgradesList> upgrL = GameManager.gameManager.upgradesList;
         foreach(UpgradesList i in GameManager.gameManager.upgradesList)
         {
-            if(i.itemName == upgr.giveName())
+            if(i.itemName == m_Upgr.giveName())
             {
-                i.strength += strength;
-                RunUpgradeOnGrab(i,strength);
+                i.strength += m_Strength;
+                RunUpgradeOnGrab(i,m_Strength);
                 return;
             }
 
         }
-        UpgradesList _up = new UpgradesList(upgr, upgr.giveName(), strength);
+        UpgradesList _up = new UpgradesList(m_Upgr, m_Upgr.giveName(), m_Strength);
         GameManager.gameManager.upgradesList.Add(_up);
         RunUpgradeOnGrab(_up,_up.strength);
     }
@@ -48,9 +48,9 @@ public class UpgradePickup : MonoBehaviour
 
     }
   
-    public Upgrades assaignUpgr()
+    public Upgrades AssignUpgrade()
     {
-        switch (chooseUpgrade)
+        switch (m_ChooseUpgrade)
         {
             case ChooseUpgrade.Healing:
                 return new HealerUpgrade();
@@ -97,6 +97,11 @@ public class UpgradePickup : MonoBehaviour
 
         }
     }
+
+    public Upgrades assaignUpgr() => AssignUpgrade();
+    public float strength { get => m_Strength; set => m_Strength = value; }
+    public ChooseUpgrade chooseUpgrade { get => m_ChooseUpgrade; set => m_ChooseUpgrade = value; }
+    public int price { get => m_Price; set => m_Price = value; }
    
 }
 public enum ChooseUpgrade

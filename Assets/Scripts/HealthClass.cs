@@ -1,5 +1,7 @@
 
 
+//TODO remember i have to update naming convetion in this script and in healthclass.cs
+
 public class HealthClass 
 {
     // Start is called before the first frame update
