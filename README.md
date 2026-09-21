@@ -4,7 +4,7 @@
 
 This is a roguelike / soulslike game.
 
-It has 9 weapons, 8 enemies, 21 "upgrades", 13 "items", 60 rooms and more.
+It has 9 weapons, 8 enemies, 21 upgrades, 13 items, 60 rooms and more.
 
 __The code is in `Assets/Scripts`__
 
@@ -21,6 +21,9 @@ https://github.com/user-attachments/assets/7dcfc62a-523d-4bde-a4c8-a7f7916da63c
 
 ## How to run / Build
 
+``` bash
+git clone https://github.com/Aniol-Marcet-Hauk/TheHarvest.git
+```
 1. Open Unity Hub and add this project folder.
 2. Open with the specified Unity Editor version.
 3. To run in Editor: open `Assets/Scenes` choose a scene and press Play .
@@ -43,14 +46,6 @@ git clone --branch vStable https://github.com/Aniol-Marcet-Hauk/TheHarvest.git
 - Different ranged and melee weapons with a combo system
 - items like spikes boñmbs and daggers that can be used by pressing f
 - Upgrades that change the way you play: poisoning, healing, exploding attacks, freezing, etc
-
-## Project layout
-
-- `Assets/Scripts` — gameplay code
-- `Assets/Scenes` — scenes and levels
-- `Assets/AAA_ObjectPrefabs` — prefabs (weapons, enemies, rooms)
-- `Assets/Graphics` — sprites, models, materials
-- `Assets/Audio` — music and SFX
 
 ## Level & room generation
 
