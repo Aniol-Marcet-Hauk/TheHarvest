@@ -68,12 +68,12 @@ classDiagram
     Enemy o-- HealthClass
     EnemySpawn o-- Enemy
     WolfEnemy --> Enemy 
-    GameManager --> "*" Items
-    GameManager --> "*" UpgradesList
+    GameManager --> Items
+    GameManager --> UpgradesList
     UpgradesList o-- Upgrades
     RandomRoomGeneration "1" o-- "*" Room
-    Room --> "*" EnemySpawn 
-    Room --> "*" Chest
+    Room --> EnemySpawn 
+    Room --> Chest
     Items <|-- ASpecificItem
     Upgrades <|-- ASpecificUpgrade
     
