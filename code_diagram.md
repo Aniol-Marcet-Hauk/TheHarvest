@@ -4,7 +4,60 @@ Below is a simplified class diagram representing main classes and relationships,
 
 ```mermaid
 classDiagram
-   
+   class GameManager {
+         <<singleton>>
+        
+    }
+
+    class PlayerMain {
+    
+    }
+
+    class PlayerAnimation {
+    }
+
+    class Enemy {
+    }
+
+    class WolfEnemy {
+    }
+
+    class HealthClass {
+    }
+
+    class Items {
+        <<abstract>>
+    }
+
+    class ItemsList {
+    }
+
+    class ItemHolder {
+    }
+
+    class Upgrades {
+        <<abstract>>
+    }
+
+    class UpgradesList {
+    }
+
+    class RandomRoomGeneration {
+    }
+
+    class Room {
+    }
+
+    class EnemySpawn {
+    }
+
+    class ASpecificItem{
+
+    }
+
+    class ASpecificUpgrade{
+
+    }
 
     GameManager --> PlayerMain 
     GameManager o-- HealthClass 
