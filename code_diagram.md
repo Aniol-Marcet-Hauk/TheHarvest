@@ -1,6 +1,6 @@
 # Code OOP Diagram
 
-Below is a simplified class diagram representing main classes and relationships, 
+Below is a simplified class diagram representing main classes and relationships, it doesn't show attributes and methods, only classes
 
 ```mermaid
 classDiagram
