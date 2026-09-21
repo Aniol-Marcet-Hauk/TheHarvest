@@ -19,7 +19,6 @@ classDiagram
     GameManager --> "*" UpgradesList
     UpgradesList o-- Upgrades
     RandomRoomGeneration "1" o-- "*" Room
-    Room --> RandomRoomGeneration 
     Room --> "*" EnemySpawn 
     Room --> "*" Chest
     Items <|-- ASpecificItem
