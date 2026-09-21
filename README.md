@@ -26,9 +26,15 @@ https://github.com/user-attachments/assets/7dcfc62a-523d-4bde-a4c8-a7f7916da63c
 3. To run in Editor: open `Assets/Scenes` choose a scene and press Play .
 4. Build: File → Build Settings → select platform → Build.
 
+If it gives you errors that say object reference not set to an instance try using the old version of this project:
+
+``` bash
+git clone --branch vStable https://github.com/Aniol-Marcet-Hauk/TheHarvest.git
+```
+
 ## Controls
 
-- Keyboard: WASD to move, Space to dodge, Left Mouse to attack, Right Mouse to block, f for items and interacting
+- Keyboard: WASD to move, Space to dodge, Left Mouse to attack, Right Mouse to block, f for items and interacting, and q and e to change items.
 
 ## Gameplay overview
 
@@ -51,6 +57,7 @@ https://github.com/user-attachments/assets/7dcfc62a-523d-4bde-a4c8-a7f7916da63c
 The room generation is a code inspired by binding of isaac, but it allows for any room size and shape. 
 
 https://github.com/user-attachments/assets/59b8b40f-4b0c-4a2d-93d5-326af24deff8
+
 ## Graphs
 
 __OOP Graph__
