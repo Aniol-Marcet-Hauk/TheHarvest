@@ -26,7 +26,7 @@ https://github.com/user-attachments/assets/7dcfc62a-523d-4bde-a4c8-a7f7916da63c
 3. To run in Editor: open `Assets/Scenes` choose a scene and press Play .
 4. Build: File → Build Settings → select platform → Build.
 
-If it gives you errors that say object reference not set to an instance try using the old version of this project:
+If it gives you errors that say object reference not set to an instance try using the __old version__ of this project:
 
 ``` bash
 git clone --branch vStable https://github.com/Aniol-Marcet-Hauk/TheHarvest.git
