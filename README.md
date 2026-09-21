@@ -62,6 +62,7 @@ __OOP Graph__
 __General Game loop__
 
 <img width="570" height="682" alt="Image" src="https://github.com/user-attachments/assets/6c60cca1-e3c1-4db4-9c75-b7974cb4f80f" />
+
 It is in catalan
 
 ## Packages unity/dependencies
