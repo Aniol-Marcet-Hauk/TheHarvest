@@ -65,7 +65,7 @@ __General Game loop__
 
 It is in catalan
 
-## Packages unity/dependencies
+## Packages unity dependencies
 
 - cinemachine 
 - textmeshpro
@@ -73,7 +73,6 @@ It is in catalan
 - searcher
 - shadergraph
 - burst
-- mathematics
 
 ## Known issues and future improvements
 
