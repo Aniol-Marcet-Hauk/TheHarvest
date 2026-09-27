@@ -57,6 +57,7 @@ https://github.com/user-attachments/assets/59b8b40f-4b0c-4a2d-93d5-326af24deff8
 
 __OOP Graph__
 
+OOP graph (only classes no attributes or methods)
 [OOP code diagram](code_diagram.md)
 
 (ASpecificItem and ASpecificUpgrade aren't real classes they just refer to any specific Item or Upgrade)
@@ -65,7 +66,6 @@ __General Game loop__
 
 <img width="570" height="682" alt="Image" src="https://github.com/user-attachments/assets/6c60cca1-e3c1-4db4-9c75-b7974cb4f80f" />
 
-It is in catalan
 
 ## Packages unity dependencies
 
