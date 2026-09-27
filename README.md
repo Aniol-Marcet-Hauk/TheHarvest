@@ -36,7 +36,7 @@ git clone https://github.com/Aniol-Marcet-Hauk/TheHarvest.git
 1. Open Unity Hub and add this project folder.
 2. Open with the specified Unity Editor version.
 3. To run in Editor: open `Assets/Scenes` choose a scene and press Play .
-4. Build: File → Build Settings → select platform → Build.
+4. Build: File -> Build Settings -> select platform -> Build.
 
 If it gives you errors that say object reference not set to an instance try using the __old version__ of this project:
 
@@ -58,7 +58,11 @@ git clone --branch vStable https://github.com/Aniol-Marcet-Hauk/TheHarvest.git
 
 ## Level & room generation
 
-The room generation is a code inspired by binding of isaac, but it allows for any room size and shape. 
+The room generation is a code inspired by the original binding of isaac, but it allows for any room size and shape.
+It focuses on making levels interesting, meaning: 
+spreading the most special rooms far apart on the  map,
+allowing different difficulty of rooms determine how challenging a level will be,
+allowing for loops to be created making levels feel different instead of simply corridors.
 
 https://github.com/user-attachments/assets/59b8b40f-4b0c-4a2d-93d5-326af24deff8
 
