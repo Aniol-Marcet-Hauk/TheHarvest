@@ -64,8 +64,7 @@ OOP graph (only classes no attributes or methods)
 
 __General Game loop__
 
-<img width="570" height="682" alt="Image" src="https://github.com/user-attachments/assets/6c60cca1-e3c1-4db4-9c75-b7974cb4f80f" />
-
+<img width="856" height="1024" alt="Image" src="https://github.com/user-attachments/assets/d829ca38-af27-465e-9485-c7a77b2ffdc8" />
 
 ## Packages unity dependencies
 
