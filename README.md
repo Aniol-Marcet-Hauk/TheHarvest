@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a roguelike / soulslike game.
+This is a roguelike / soulslike game, focused on scalable design.
 
 It has 9 weapons, 8 enemies, 21 upgrades, 13 items, 60 rooms and more.
 
