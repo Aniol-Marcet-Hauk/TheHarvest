@@ -16,8 +16,17 @@ https://github.com/user-attachments/assets/7dcfc62a-523d-4bde-a4c8-a7f7916da63c
 
 - Unity Editor version:2021.3.23f1
 - Render pipeline: URP (if applicable)
-- Packages: TextMeshPro, Cinemachine, (list others used)
+- Packages: listed in next section
 - Platform: made for windows
+
+## Packages unity dependencies
+
+- cinemachine 
+- textmeshpro
+- probuilder
+- searcher
+- shadergraph
+- burst
 
 ## How to run / Build
 
@@ -58,6 +67,7 @@ https://github.com/user-attachments/assets/59b8b40f-4b0c-4a2d-93d5-326af24deff8
 __OOP Graph__
 
 OOP graph (only classes no attributes or methods)
+
 [OOP code diagram](code_diagram.md)
 
 (ASpecificItem and ASpecificUpgrade aren't real classes they just refer to any specific Item or Upgrade)
@@ -66,14 +76,7 @@ __General Game loop__
 
 <img width="856" height="1024" alt="Image" src="https://github.com/user-attachments/assets/d829ca38-af27-465e-9485-c7a77b2ffdc8" />
 
-## Packages unity dependencies
 
-- cinemachine 
-- textmeshpro
-- probuilder
-- searcher
-- shadergraph
-- burst
 
 ## Known issues and future improvements
 
